@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_chat_ai"
+        android:icon="@drawable/ic_tab_chat_ai_24dp"
+        android:title="@string/title_chat_ai" />
+
+    <item
+        android:id="@+id/navigation_factual_answering"
+        android:icon="@drawable/ic_tab_factual_answering_24dp"
+        android:title="@string/title_factual_answering" />
+
+    <item
+        android:id="@+id/navigation_friend_chat"
+        android:icon="@drawable/ic_tab_friend_chat_24dp"
+        android:title="@string/title_friend_chat" />
+
+    <item
+        android:id="@+id/navigation_sarcastic_chat"
+        android:icon="@drawable/ic_tab_sarcastic_chat_24dp"
+        android:title="@string/title_sarcastic_chat" />
+
+    <item
+        android:id="@+id/navigation_smart_chat"
+        android:icon="@drawable/ic_tab_smart_chat_24dp"
+        android:title="@string/title_smart_chat" />
+
+</menu>

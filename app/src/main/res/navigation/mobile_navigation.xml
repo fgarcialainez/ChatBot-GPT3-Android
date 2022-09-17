@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_chat_ai">
+
+    <fragment
+        android:id="@+id/navigation_chat_ai"
+        android:name="com.fgarcialainez.chatbotgpt3.ui.fragments.ChatAIFragment"
+        android:label="@string/title_chat_ai"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/navigation_factual_answering"
+        android:name="com.fgarcialainez.chatbotgpt3.ui.fragments.FactualAnsweringFragment"
+        android:label="@string/title_factual_answering"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/navigation_friend_chat"
+        android:name="com.fgarcialainez.chatbotgpt3.ui.fragments.FriendChatFragment"
+        android:label="@string/title_friend_chat"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/navigation_sarcastic_chat"
+        android:name="com.fgarcialainez.chatbotgpt3.ui.fragments.SarcasticChatFragment"
+        android:label="@string/title_sarcastic_chat"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/navigation_smart_chat"
+        android:name="com.fgarcialainez.chatbotgpt3.ui.fragments.SmartChatFragment"
+        android:label="@string/title_smart_chat"
+        tools:layout="@layout/fragment_base" />
+</navigation>

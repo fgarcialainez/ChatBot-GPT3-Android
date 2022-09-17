@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/settings_profile_header">
+        <EditTextPreference
+            app:key="USERNAME_KEY"
+            app:title="@string/settings_profile_username"
+            app:icon="@drawable/ic_settings_user_30dp"
+            app:dialogIcon="@drawable/ic_settings_user_30dp"
+            app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+            app:key="BIOGRAPHY_KEY"
+            app:title="@string/settings_profile_biography"
+            app:icon="@drawable/ic_settings_bio_30dp"
+            app:dialogIcon="@drawable/ic_settings_bio_30dp"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_text_to_speech_header">
+        <SwitchPreferenceCompat
+            app:key="TEXT_TO_SPEECH_KEY"
+            app:title="@string/settings_text_to_speech_activate"
+            app:icon="@drawable/ic_settings_tts_30dp"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
