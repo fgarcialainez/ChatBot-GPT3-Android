@@ -24,7 +24,7 @@ import com.fgarcialainez.chatbotgpt3.ui.adapters.MessagesListAdapter
 abstract class BaseFragment(val sourceType: SourceType) : Fragment() {
 
     private lateinit var messagesListAdapter: MessagesListAdapter
-    private lateinit var messagesListViewModel: com.fgarcialainez.chatbotgpt3.models.MessagesListViewModel
+    private lateinit var messagesListViewModel: MessagesListViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -89,20 +89,23 @@ abstract class BaseFragment(val sourceType: SourceType) : Fragment() {
     }
 
     // Abstract method to return custom view models for each fragment
-    abstract fun <T : com.fgarcialainez.chatbotgpt3.models.MessagesListViewModel> getViewModelClass(): Class<T>
+    abstract fun <T : MessagesListViewModel> getViewModelClass(): Class<T>
 
+    @Suppress("DEPRECATION")
     override fun onCreate(savedInstanceState: Bundle?) {
         // Enable options menu in this fragment
         setHasOptionsMenu(true)
         super.onCreate(savedInstanceState)
     }
 
+    @Suppress("DEPRECATION")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         // Inflate the menu
         inflater.inflate(R.menu.options_menu, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
+    @Suppress("DEPRECATION")
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Get item id to handle item clicks
         val id = item.itemId
